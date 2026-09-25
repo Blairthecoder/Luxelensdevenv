@@ -1,0 +1,404 @@
+@font-face {
+  font-family: "Luxe Sans";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("../fonts/source-sans-3-latin-variable-normal.woff2") format("woff2");
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font-family: "Luxe Sans", "Segoe UI", Arial, sans-serif;
+}
+
+.tt-tools-button,
+.btn-primary,
+.bg-primary,
+.price-box-btn .btn-primary {
+  background-color: #08bdb5;
+  border-color: #08bdb5;
+}
+
+a,
+.text-primary,
+.tt-heading-subtitle,
+.price-box-price,
+.blog-list-item-category a {
+  color: #08aaa4;
+}
+
+.luxe-map {
+  min-height: 390px;
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  background:
+    linear-gradient(rgba(18, 24, 24, .55), rgba(18, 24, 24, .55)),
+    url("../img/misc/misc-4.jpg") center / cover no-repeat;
+  text-align: center;
+}
+
+.luxe-map a {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  padding: 13px 22px;
+  background: #08bdb5;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.luxe-map a:hover,
+.luxe-map a:focus {
+  background: #078f8a;
+  color: #fff;
+}
+
+#header #logo img {
+  width: 190px;
+  height: auto;
+}
+
+#footer-logo img {
+  width: 230px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  #logo img {
+    width: 145px;
+    max-height: 42px;
+  }
+}
+
+/* ==========================================================
+   Luxe Lens homepage components (trust bar, card grid, quote)
+   ========================================================== */
+
+#luxe-trust-bar {
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+.luxe-trust-item {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.luxe-trust-label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 12px;
+  color: #08aaa4;
+  margin-bottom: 6px;
+}
+
+.luxe-trust-value {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.luxe-card-grid {
+  margin-top: 10px;
+}
+
+.luxe-card {
+  display: block;
+  height: 100%;
+  padding: 30px 22px;
+  margin-bottom: 30px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .08);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, .04);
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, box-shadow .2s ease;
+  word-wrap: break-word;
+}
+
+.luxe-card:hover,
+.luxe-card:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .1);
+  color: inherit;
+  text-decoration: none;
+}
+
+.luxe-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.luxe-card p {
+  font-size: 14px;
+  margin: 0;
+  opacity: .8;
+}
+
+.luxe-card-light {
+  background: #fff;
+}
+
+.luxe-stars {
+  color: #08aaa4;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+
+.luxe-quote {
+  border: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.luxe-quote p {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.luxe-quote footer {
+  margin-top: 12px;
+  font-size: 14px;
+  opacity: .75;
+}
+
+#luxe-newsletter-section {
+  padding: 60px 0;
+}
+
+.luxe-newsletter-cover {
+  width: 100%;
+  height: auto;
+  max-width: 220px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
+  margin-bottom: 20px;
+}
+
+#luxe-philosophy-section {
+  padding: 90px 0;
+  text-align: center;
+}
+
+#luxe-review-section,
+#luxe-services-section,
+#luxe-business-section {
+  padding-bottom: 70px;
+}
+
+@media (max-width: 767px) {
+  .luxe-card {
+    padding: 24px 18px;
+  }
+
+  #luxe-philosophy-section {
+    padding: 60px 0;
+  }
+
+  #luxe-trust-bar {
+    padding: 30px 0;
+  }
+}
+
+/* ==========================================================
+   Events, journal, portfolio and services page components
+   ========================================================== */
+
+.luxe-gallery-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.luxe-event-date {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  min-width: 140px;
+}
+
+.luxe-event-date span {
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 12px;
+  color: #08aaa4;
+}
+
+.luxe-event-date strong {
+  font-size: 44px;
+  line-height: 1.1;
+}
+
+.luxe-event-date p {
+  margin: 6px 0 0;
+  font-size: 13px;
+}
+
+.luxe-benefit-number {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #08aaa4;
+  margin-bottom: 8px;
+}
+
+#luxe-event-recap-section,
+#luxe-updates-section,
+#luxe-premiere-feature,
+#luxe-live-stage-section {
+  padding: 70px 0;
+}
+
+.luxe-journal-thumb,
+.luxe-portfolio-img,
+.luxe-service-thumb {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.luxe-portfolio-item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.luxe-portfolio-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px 18px;
+  background: linear-gradient(to top, rgba(0, 0, 0, .75), transparent);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.luxe-portfolio-caption em {
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 11px;
+  opacity: .85;
+  margin-bottom: 3px;
+}
+
+#luxe-404-section {
+  padding: 110px 0 40px;
+}
+
+/* ==========================================================
+   Service/journal detail pages: FAQ, checklist, article body
+   ========================================================== */
+
+.luxe-check-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.luxe-check-list li {
+  position: relative;
+  padding: 8px 0 8px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, .06);
+}
+
+.luxe-check-list li:before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #08aaa4;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.luxe-faq-list details {
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding: 18px 0;
+}
+
+.luxe-faq-list summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+  outline: none;
+}
+
+.luxe-faq-list summary::-webkit-details-marker {
+  color: #08aaa4;
+}
+
+.luxe-faq-list p {
+  margin: 12px 0 0;
+  opacity: .85;
+}
+
+.luxe-article-body h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.luxe-article-body h2:first-child {
+  margin-top: 0;
+}
+
+.luxe-article-body p {
+  margin-bottom: 15px;
+}
+
+.luxe-article-meta {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  font-size: 14px;
+  opacity: .75;
+}
+
+#luxe-service-intro,
+#luxe-article-section {
+  padding-top: 60px;
+}
+
+#luxe-service-offerings,
+#luxe-industries-section {
+  padding-bottom: 70px;
+}
+
+@media (max-width: 767px) {
+  #luxe-404-section {
+    padding: 80px 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .luxe-gallery-img,
+  .luxe-journal-thumb,
+  .luxe-portfolio-img,
+  .luxe-service-thumb {
+    height: 220px;
+  }
+
+  #luxe-event-recap-section,
+  #luxe-updates-section,
+  #luxe-premiere-feature,
+  #luxe-live-stage-section {
+    padding: 40px 0;
+  }
+
+  .luxe-event-date {
+    margin-bottom: 24px;
+  }
+}
